@@ -33,4 +33,28 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'bundler', '~> 1.16'
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
+
+  # NLP
+  spec.add_development_dependency 'punkt-segmenter' # Sentence segmentation
+  spec.add_development_dependency 'srx-english' # English sentence segmentation absed on SRX
+  spec.add_development_dependency 'stanford-core-nlp' # Ruby bindings to the Stanford Core NLP tools
+  spec.add_development_dependency 'treat' # NLP framework in Ruby
+  spec.add_development_dependency 'graph-rank' # PageRank and TextRank implementation
+  spec.add_development_dependency 'stuff-classifier' # with Redis persistence
+  spec.add_development_dependency 'ruby-stemmer' # Expose libstemmer_c to Ruby
+  spec.add_development_dependency 'nbayes' # Naive Bayes
+  spec.add_development_dependency 'decisiontree' # ID3-based ML Decision Tree algorithm
+  spec.add_development_dependency 'classifier-reborn' # General classifier to allow for Bayesian and others
+  spec.add_development_dependency 'linnaeus' # Redis-backed Bayesian Classifier
+
+  # Input
+  spec.add_development_dependency 'schiphol' # Simple HTTP downloader
+  spec.add_development_dependency 'rugged' # Ruby bindings to libgit2 (git)
+  spec.add_development_dependency 'down' # Useful library to download/stream files
+
+  # Search
+  spec.add_development_dependency 'textquery' # Match rules PEG-based (e.g. search engine options)
+
+  # Parsing
+  spec.add_development_dependency 'nikkou' # Extract useful data from HTML and XML (Nokogiri)
 end
